@@ -6,5 +6,9 @@
 *.iml
 
 # Ignore build output folders
-out/
+target/
 bin/
+doc/
+out/
+build/
+dist/
