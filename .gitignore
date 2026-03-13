@@ -12,3 +12,14 @@ doc/
 out/
 build/
 dist/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Eclipse IDE settings (Optional, par future ke liye accha hai)
+.classpath
+.project
+.settings/
+
+# Ignore Mac OS hidden files (Agar tum ya tumhara team member Mac use kare)
+.DS_Store
