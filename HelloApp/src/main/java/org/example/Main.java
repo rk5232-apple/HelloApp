@@ -4,14 +4,15 @@ public class Main{
         if (args.length == 0) {
             System.out.println("Hello, World!");
         } else {
-            StringBuilder names = new StringBuilder();
-            for (int i = 0; i < args.length; i++) {
-                names.append(args[i]);
-                if (i < args.length - 1) {
-                    names.append(", ");
-                }
+            StringBuilder nameBuilder = new StringBuilder();
+            for (String name : args) {
+                nameBuilder.append(name).append(", ");
             }
-            System.out.println("Hello, " + names.toString() + "!");
+            String names = "";
+            if (nameBuilder.length() > 0) {
+                names = nameBuilder.substring(0, nameBuilder.length() - 2);
+            }
+            System.out.println("Hello, " + names + "!");
         }
     }
 }
